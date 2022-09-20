@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.thank-you {
+			display: none;
+		}
+		.thank-you.active {
+			display: block;
+		}
+	</style>
+	<body>
+		<form id="request-form" action="">
+			<input type="text" placeholder="Name" id="name" />
+			<input type="text" placeholder="Phone" id="phone" />
+			<input type="text" placeholder="mail" id="email" />
+			<button type="submit">Send</button>
+		</form>
+		<div class="thank-you">thank you</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			$("#request-form").submit(function (e) {
+				e.preventDefault();
+				$.ajax({
+					url: "https://api.telegram.org/bot5200377791:AAFPlQX65htzCX9cVIUJiE2Vukg0C7JekyY/sendMessage",
+					method: "POST",
+					data: {
+						chat_id: "357042416",
+						text:
+							"Имя: " +
+							$("#name").val() +
+							"\nПочта: " +
+							$("#email").val() +
+							"\nНомер: " +
+							$("#phone").val(),
+					},
+					success: function () {
+						$(".thank-you").addClass("active");
+					},
+				});
+			});
+		</script>
+	</body>
+</html>

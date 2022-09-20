@@ -1,0 +1,149 @@
+@media screen and (max-width: 1200px) {
+  .promo_img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .decr {
+    font-size: 32px;
+  }
+
+  .promo_img {
+    padding-left: 10px;
+    align-items: end;
+  }
+  .carousel-teacher {
+    width: 300px;
+    height: 320px;
+  }
+  video {
+    width: 220px;
+    height: 310px;
+  }
+  .first_img {
+    margin-left: 50px;
+    width: 320px;
+    height: 320px;
+  }
+  .footer_box-nav-2 {
+    padding-left: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .tab .row > *:first-child {
+    background: url("../dist/icons/icon_1.png") 8px no-repeat;
+    background-size: 15px;
+  }
+  .tab .row > *:nth-child(2) {
+    background: url("../dist/icons/icon_2.png") 10px no-repeat;
+    background-size: 17px;
+  }
+  .tab .row > *:nth-child(3) {
+    background: url("../dist/icons/icon_3.png") 10px no-repeat;
+    background-size: 19px;
+  }
+  .tab .row > *:nth-last-child(1) {
+    background: url("../dist/icons/icon_4.png") 10px no-repeat;
+    background-size: 23px;
+  }
+  .aside_text {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promo {
+    padding: 100px 0 100px 0;
+  }
+  .promo_btn {
+    width: 35%;
+    height: 56px;
+    font-size: 15px;
+  }
+
+  .promo_img {
+    padding-left: 45px;
+  }
+  .promo_text {
+    font-size: 15px;
+  }
+  .decr {
+    font-size: 28px;
+  }
+  a {
+    font-size: 15px;
+  }
+  video {
+    margin-right: 20px;
+    width: 300px;
+    height: 350px;
+  }
+  .contact {
+    font-size: 25px;
+  }
+  .address {
+    font-size: 15px;
+  }
+  .subheader {
+    margin: 0;
+  }
+  .carousel-teacher {
+    width: 230px;
+    height: 250px;
+  }
+  .footer_box-nav-2 {
+    padding-left: 0;
+  }
+  .feedback_all {
+    display: block;
+  }
+  .feedback_text {
+    margin: 0 0 0 50px;
+  }
+  .feedback_2 .phone input {
+    padding: 10px 240px 10px 5px;
+    margin: 0 20px 10px 20px;
+  }
+  .send button {
+    margin: 0px 10px 20px 20px;
+  }
+  .feedback_2 form {
+    grid-template-columns: 0.7fr 1fr;
+  }
+  .thank-you {
+    margin: 10px 0px 20px 0;
+    padding: 0px 2px;
+  }
+  .common-how {
+    display: none;
+  }
+  .footer__nav-label {
+    font-size: 19px;
+  }
+  .end {
+    padding-top: 10px;
+  }
+  .menu_all-link {
+    display: none;
+  }
+  .menu-all-link-mobile-version {
+    display: block;
+  }
+  label .menu {
+    top: -116px;
+    border-radius: 0 21% 26% 40%;
+    left: 86%;
+  }
+  label ul {
+    bottom: 0;
+    list-style-type: none;
+  }
+  label li a {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+}
